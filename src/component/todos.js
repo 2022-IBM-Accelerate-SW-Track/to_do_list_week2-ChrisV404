@@ -10,7 +10,7 @@ import {ListItemButton, ListItemText, Checkbox} from "@mui/material";
 // 3. The map function is called to assign each array item with a key
 // 4. Think of lines 14-23 as a loop. For each todo in the todo list, we want to give the list item
 // a key, and it's own card shown in the UI
-const Todos = ({ todos }) => {
+const Todos = ({ todos, deleteTodo }) => {
   const todoList = todos.length ? (
     todos.map((todo) => {
       return (
